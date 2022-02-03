@@ -19,5 +19,5 @@ def get_camera(camera_name):
         print("{} {} -> {}".format(found, file, name))
     return cam_num
 
-cam_number = get_camera('Microsoft® LifeCam Studio(TM)')
+cam_number = get_camera('xxx')
 print(cam_number)
