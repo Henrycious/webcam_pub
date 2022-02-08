@@ -13,7 +13,7 @@ def get_camera(camera_name):
         real_file = os.path.join("/sys/class/video4linux/" + file + "/device/input/"+ input_name[0] + "/name")
         with open(real_file, "rt") as name_file:
             name = name_file.read().rstrip()
-            print(name)
+            print(name + ' -- Video Channel -- ' + file[-1])
         if camera_name in name:
             port_return = file[-1]
             return port_return
